@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert New Name</title>
+</head>
+<body>
+<form th:object="${newContact}" th:action="@{/inputContact}"
+method='POST'>
+Name: <input name="name" size="20"> <br />
+Desired Present: <input name="desiredPresent" size="50"><br />
+Relationship: <input name="relationship" size="10"><br />
+<br />
+<input name="submit" type="submit" value="submit" />
+</form>
+<a href="viewAll">View Full Christmas List</a>
+</body>
+</html>
